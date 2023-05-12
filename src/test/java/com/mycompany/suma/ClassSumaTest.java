@@ -12,14 +12,35 @@ import static org.junit.Assert.*;
  * @author Jaavii
  */
 public class ClassSumaTest {
-    Suma suma;
-    public ClassSumaTest() {
+    ClassSuma checker = new ClassSuma(0,0);
+    
+     @Test
+    public void testSumar() {
+        int resultado = checker.sumar(3,4);
+        assertEquals(7,resultado);
     }
 
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testGetNum1() {
+        int num1 = checker.getNum1();
+        assertEquals(0, num1);
+    }
+
+    @Test
+    public void testSumaValorAbsoluto() {
+        int numFinal = checker.sumaValorAbsolut();
+        assertEquals(5, numFinal);
+    }
+}
+
+
+
+
+
+
+
+
+        
     }
     
-}
+
